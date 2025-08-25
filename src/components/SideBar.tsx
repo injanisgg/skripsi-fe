@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import { NavLink, Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 // props for open and close sidebar
 type SidebarProps = {
