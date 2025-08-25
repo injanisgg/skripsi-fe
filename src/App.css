@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+@theme {
+  --breakpoint-xs: 375px;
+  --breakpoint-sm: 425px;
+  --breakpoint-md: 768rem;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1440px;
+  --font-main: "Roboto Serif";
+  --font-secondary: "DM Sans";
+  --color-main: #64CCC5;
+}
