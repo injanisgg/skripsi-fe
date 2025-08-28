@@ -3,6 +3,8 @@ import PictQuote from '../images/pict-home.png';
 import Footer from '../components/Footer';
 
 function Home() {
+  
+
   const contentData = [
     {
       icon: <i className="fa-solid fa-suitcase-medical text-white"></i>,
@@ -80,7 +82,7 @@ function Home() {
         </div>
         <button className='flex gap-1 bg-white rounded-xl p-2 items-center mt-2'>
           <i className="fa-solid fa-circle-chevron-right"></i>
-          <p className='text-sm font-secondary'>Start Classification</p>
+          <p className='text-sm font-secondary'>Start Classify</p>
         </button>
       </header>
 
@@ -112,7 +114,7 @@ function Home() {
         </span>
         <button className='flex gap-1 bg-white rounded-xl p-2 items-center mt-2'>
           <i className="fa-solid fa-circle-chevron-right"></i>
-          <p className='text-sm font-secondary'>Start Classification</p>
+          <p className='text-sm font-secondary'>Start Classify</p>
         </button>
       </div>
 

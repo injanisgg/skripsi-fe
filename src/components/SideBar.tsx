@@ -91,7 +91,7 @@ export default function Sidebar({ open, onClose }: SidebarProps) {
                     </li>
                     <li>
                         <NavLink 
-                         to="/classification"
+                         to="/classify"
                          className={({ isActive }) => `block rounded-xl px-3 py-2 hover:bg-gray-50 ${isActive ? 'bg-yellow-100 p-3 rounded-lg font-semibold' : 'bg-white'}`}
                          onClick={onClose}
                         >
@@ -146,7 +146,7 @@ export default function Sidebar({ open, onClose }: SidebarProps) {
                         </a>
                     </li>
                     <li>
-                        <a href="#classification" className="block rounded-xl px-3 py-2 hover:bg-gray-50">
+                        <a href="#classify" className="block rounded-xl px-3 py-2 hover:bg-gray-50">
                             <span className="flex gap-2 items-center font-main">
                                 <i className="fa-solid fa-sitemap"></i>
                                 <p>Classification</p>

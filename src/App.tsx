@@ -12,7 +12,7 @@ function App() {
     <BrowserRouter>
       <div className='min-h-screen bg-gray-50 md:pl-64'>
       {/* top bar mobile */}
-      <header className='sticky top-0 z-20 flex items-center gap-3 border-b bg-white px-4 py-3 lg:hidden'>
+      <header className='sticky top-0 z-20 flex items-center gap-3 bg-white px-4 py-3 lg:hidden'>
         <button
           aria-label='Open menu'
           onClick={() => setOpen(true)}

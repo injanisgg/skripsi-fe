@@ -8,7 +8,7 @@ export default function AppRoutes() {
   return (
     <Routes>
         <Route path='/' element={<Home/>}/>
-        <Route path='/classification' element={<Classification/>}/>
+        <Route path='/classify' element={<Classification/>}/>
         <Route path='/model' element={<Model/>}/>
         <Route path='/about' element={<About/>}/>
     </Routes>

@@ -1,8 +1,9 @@
+import HeadTitle from "../components/HeadTitle"
 
 function About() {
   return (
     <div>
-      this is about
+      <HeadTitle title={'About the System'} desc={'This page provides information about the WQI classification system'}/>
     </div>
   )
 }
