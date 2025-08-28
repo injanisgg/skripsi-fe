@@ -8,7 +8,7 @@ function Model() {
       <HeadTitle title={'Model Information'} desc={'This page displays information about the WQI classification model'}/>
 
       {/* footer */}
-      {/* <Footer /> */}
+      <Footer />
     </div>
   )
 }
