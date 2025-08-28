@@ -62,14 +62,14 @@ function Home() {
       <header className="bg-black m-0 p-3 flex flex-col items-center gap-3">
         <img src={UnnesHeader} alt="Unnes" className='w-40' />
         <div>
-          <div className='flex flex-col items-center text-center'>
-            <span className='text-white font-semibold font-main text-lg'>Water Quality Index</span>
-            <span className='text-main font-semibold font-main text-lg'>Classification using LightGBM</span>
-            <span className='text-white font-semibold font-main text-lg'>with RFE Feature Selection</span>
-            <span className='text-main font-semibold font-main text-lg'>SMOTE Oversampling Technique</span>
-            <span className='text-white font-semibold font-main text-lg'>and Optuna Hyperparameter Optimization</span>
+          <div className='flex flex-col items-center text-center text-lg'>
+            <span className='text-white font-semibold font-main'>Water Quality Index</span>
+            <span className='text-main font-semibold font-main'>Classification using LightGBM</span>
+            <span className='text-white font-semibold font-main'>with RFE Feature Selection</span>
+            <span className='text-main font-semibold font-main'>SMOTE Oversampling Technique</span>
+            <span className='text-white font-semibold font-main'>and Optuna Hyperparameter Optimization</span>
           </div>
-          <div className='flex flex-col text-center font-secondary text-white text-xs mt-5'>
+          <div className='flex flex-col text-center font-secondary text-white text-sm mt-5'>
             <p>
               Written by Sugini Injani<br/>
               Major in Informatics Engineering <br />
@@ -78,14 +78,14 @@ function Home() {
             </p>
           </div>
         </div>
-        <button className='flex gap-1 bg-white rounded-xl p-2 items-center'>
+        <button className='flex gap-1 bg-white rounded-xl p-2 items-center mt-2'>
           <i className="fa-solid fa-circle-chevron-right"></i>
-          <p className='text-xs font-secondary'>Start Classification</p>
+          <p className='text-sm font-secondary'>Start Classification</p>
         </button>
       </header>
 
       {/* content problems */}
-      <div className='mt-5'>
+      <div className='mt-10'>
         <span className='flex flex-col justify-center text-center gap-1'>
           <h4 className='font-secondary text-main font-semibold text-sm'>The Problem</h4>
           <h1 className='font-main text-black font-bold font-xl'>Why water quality index is important?</h1>
@@ -94,39 +94,39 @@ function Home() {
           {contentData.map((data, index) => (
             <div key={index} className="bg-slate-200 px-5 py-3 rounded-lg flex flex-col gap-1 justify-start">
             <div className='bg-black w-fit p-2 rounded-full'>{data.icon}</div>
-            <p className="text-black font-semibold font-main text-sm">{data.title}</p>
-            <p className="text-black text-xs font-secondary">{data.desc}</p>
+            <p className="text-black font-semibold font-main text-base">{data.title}</p>
+            <p className="text-black text-sm font-secondary">{data.desc}</p>
           </div>
           ))}
         </div>
       </div>
 
       {/* content quote */}
-      <div className="bg-black flex flex-col justify-center items-center gap-2 p-3 mt-5">
+      <div className="bg-black flex flex-col justify-center items-center gap-2 p-3 mt-14">
         <img src={PictQuote} alt="People drinking" className='w-44' />
         <span className='text-center text-white'>
-          <h3 className='font-main'>Monitoring Water Quality Index</h3>
-          <p className="font-secondary text-xs mt-2">
+          <h3 className='font-main text-lg'>Monitoring Water Quality Index</h3>
+          <p className="font-secondary text-sm mt-2">
             is a critical step in ensuring the sustainability of clean water resources and safeguarding public health. It helps identify water contamination and provides the basis for timely intervention to prevent the spread of waterborne diseases.
           </p>
         </span>
         <button className='flex gap-1 bg-white rounded-xl p-2 items-center mt-2'>
           <i className="fa-solid fa-circle-chevron-right"></i>
-          <p className='text-xs font-secondary'>Start Classification</p>
+          <p className='text-sm font-secondary'>Start Classification</p>
         </button>
       </div>
 
       {/* content risk */}
-      <div>
-        <span className='flex flex-col justify-center text-center gap-1 mt-5'>
+      <div className='my-14'>
+        <span className='flex flex-col justify-center text-center gap-1'>
           <h4 className='font-secondary text-main font-semibold text-sm'>United Nation Environment Programme</h4>
-          <h1 className='font-main text-black font-bold font-xl'>New Health risk hot spot</h1>
+          <h1 className='font-main text-black font-bold text-lg'>New Health risk hot spot</h1>
         </span>
         <div className="grid grid-cols-2 gap-2 mx-3 mt-3">
           {contentRisk.map((data, index) => (
             <div key={index} className='bg-white border rounded-lg px-3 py-2 text-black'>
-              <h3 className='font-main text-sm font-semibold mb-1'>{data.title}</h3>
-              <p className='font-secondary text-xs text-left '>{data.desc}</p>
+              <h3 className='font-main text-base font-semibold mb-1'>{data.title}</h3>
+              <p className='font-secondary text-sm text-left '>{data.desc}</p>
             </div>
           ))}
         </div>
