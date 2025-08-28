@@ -16,7 +16,7 @@ function App() {
         <button
           aria-label='Open menu'
           onClick={() => setOpen(true)}
-          className='rounded-xl border px-3 py-1.5'
+          className='rounded-xl hover:border pr-3 py-1.5'
         >
           <i className="fa-solid fa-bars"></i>
         </button>

@@ -32,7 +32,7 @@ function Classification() {
 
   return (
     <div>
-      {/* title */}
+      {/* header */}
       <HeadTitle title={'Classify'} desc={'This page is for classifying the water quality index'}/>
 
       {/* form */}
