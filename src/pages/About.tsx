@@ -21,19 +21,19 @@ function About() {
       <HeadTitle title={'About the System'} desc={'This page provides information about the WQI classification system'}/>
 
       {/* about */}
-      <div className="flex flex-col gap-5 mx-5 mt-5">
-        <h2 className="text-center font-main font-bold text-xl">About</h2>
+      <div className="flex flex-col gap-5 mx-5 xl:mx-8 mt-5">
+        <h2 className="text-center font-main font-bold text-xl md:text-2xl">About</h2>
         <span>
-          <h3 className="font-main font-semibold">01. The Developer</h3>
-          <p className="font-secondary text-sm text-justify">This website was created by Sugini Injani, a student of Informatics Engineering at Universitas Negeri Semarang, as part of her thesis entitled 'Water Quality Index Classification using LGBM with RFE Feature Selection, SMOTE Oversampling Technique, and Optuna Hyperparameter Optimization.' Further information about her can be found in the footer of this website.</p>
+          <h3 className="font-main font-semibold md:text-lg">01. The Developer</h3>
+          <p className="font-secondary text-sm text-justify md:text-base">This website was created by Sugini Injani, a student of Informatics Engineering at Universitas Negeri Semarang, as part of her thesis entitled 'Water Quality Index Classification using LGBM with RFE Feature Selection, SMOTE Oversampling Technique, and Optuna Hyperparameter Optimization.' Further information about her can be found in the footer of this website.</p>
         </span>
         <span>
-          <h3 className="font-main font-semibold">02. The Objective</h3>
-          <p className="font-secondary text-sm text-justify">This website is a platform for predicting and classifying the Water Quality Index (WQI) with optimal accuracy using the LGBM algorithm combined with RFE, SMOTE, and Optuna.</p>
+          <h3 className="font-main font-semibold md:text-lg">02. The Objective</h3>
+          <p className="font-secondary text-sm text-justify md:text-base">This website is a platform for predicting and classifying the Water Quality Index (WQI) with optimal accuracy using the LGBM algorithm combined with RFE, SMOTE, and Optuna.</p>
         </span>
         <span>
-          <h3 className="font-main font-semibold">03. How to use</h3>
-          <ul className="list-disc font-secondary text-justify pl-5 text-sm">
+          <h3 className="font-main font-semibold md:text-lg">03. How to use</h3>
+          <ul className="list-disc font-secondary text-justify md:text-base pl-5 text-sm">
             <li>Collect numeric data on substances or microorganisms in water, such as aluminium, ammonia, arsenic, bacteria, barium, cadmium, chloramine, chromium, copper, lead, nitrates, nitrites, perchlorate, radium, selenium, silver, uranium, and viruses.</li>
             <li>Go to the <b>Classify</b> page and input the data into the form. Make sure all inputs are numeric.</li>
             <li>Click the <b>Classify</b> button to predict and classify the data.</li>
@@ -44,11 +44,11 @@ function About() {
       </div>
 
       {/* tools */}
-      <h2 className="text-center font-main font-bold text-xl mt-10">Tools</h2>
+      <h2 className="text-center font-main font-bold text-xl mt-10 md:text-2xl">Tools</h2>
       <div className="flex flex-wrap gap-3 justify-center mx-5 mt-3">
         {toolsData.map((data, index) => (
           <span key={index} className="flex flex-col items-center gap-1">
-            <img src={data.img} alt="rvite" className="w-24 border rounded-lg py-2" />
+            <img src={data.img} alt="rvite" className="w-24 md:w-32 border rounded-lg py-2" />
             <p className="font-main font-semibold text-sm text-center">{data.title}</p>
           </span>
         ))}

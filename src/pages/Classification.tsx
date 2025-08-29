@@ -36,23 +36,23 @@ function Classification() {
       <HeadTitle title={'Classify'} desc={'This page is for classifying the water quality index'}/>
 
       {/* form */}
-      <div className="bg-gray-200 p-5 rounded-lg mx-3 mt-8 flex flex-col gap-5">
-        <h2 className="text-center font-main font-bold text-xl">Input the data</h2>
+      <div className="bg-gray-200 p-5 rounded-lg mx-3 md:mx-5 mt-8 flex flex-col gap-5">
+        <h2 className="text-center font-main font-bold text-xl md:text-2xl">Input the data</h2>
         <form action="">
-          <ul className="flex flex-col gap-3">
+          <ul className="flex flex-col md:grid md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-5">
             {inputData.map((data, index) => (
               <li key={index} className="flex flex-col gap-2">
-                <label id={data.id} className="font-main font-medium">{data.label}</label>
-                <input type="number" name="" id="" className="border rounded-2xl bg-white pl-3 font-secondary text-sm py-3" placeholder={data.placeholder}/>
+                <label id={data.id} className="font-main font-medium text-base md:text-lg">{data.label}</label>
+                <input type="number" name="" id="" className="border rounded-2xl bg-white pl-3 font-secondary text-sm md:text-base py-3" placeholder={data.placeholder}/>
               </li>
             ))}
           </ul>
         </form>
-        <button onClick={handleClick} className="border rounded-2xl bg-black pl-3 font-secondary text-sm text-white py-3 font-semibold">Classify</button>
+        <button onClick={handleClick} className="border rounded-2xl bg-black pl-3 font-secondary text-sm md:text-base text-white py-3 font-semibold">Classify</button>
       </div>
 
       {showText && (
-        <div className="mx-3 text-center font-xl font-bold font-main mt-5">
+        <div className="mx-3 text-center text-xl md:text-2xl font-bold font-main mt-5">
           Sorry couldn't process classify <br />
           it's only frontend demo:)
         </div>

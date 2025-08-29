@@ -62,68 +62,68 @@ function Home() {
   return (
     <div>
       {/* title section */}
-      <header className="bg-black m-0 p-3 flex flex-col items-center gap-3">
-        <img src={UnnesHeader} alt="Unnes" className='w-40' />
+      <header className="bg-black m-0 p-3 flex flex-col md:flex-row-reverse items-center gap-3 md:gap-10 lg:justify-between lg:px-16 lg:py-5 xl:justify-evenly  xl:py-10">
+        <img src={UnnesHeader} alt="Unnes" className='w-40 md:w-64 xl:w-80' />
         <div>
-          <div className='flex flex-col items-center text-center text-lg'>
+          <div className='flex flex-col items-center text-center text-lg md:text-2xl'>
             <span className='text-white font-semibold font-main'>Water Quality Index</span>
             <span className='text-main font-semibold font-main'>Classification using LightGBM</span>
             <span className='text-white font-semibold font-main'>with RFE Feature Selection</span>
             <span className='text-main font-semibold font-main'>SMOTE Oversampling Technique</span>
             <span className='text-white font-semibold font-main'>and Optuna Hyperparameter Optimization</span>
           </div>
-          <div className='flex flex-col text-center font-secondary text-white text-sm mt-5'>
-            <p>
+          <div className='flex flex-col items-center text-center font-secondary mt-5'>
+            <p className='text-white text-sm'>
               Written by Sugini Injani<br/>
               Major in Informatics Engineering <br />
               Faculty of Mathematics and Natural Sciences <br />
               Universitas Negeri Semarang
             </p>
+            <Button />
           </div>
         </div>
-        <Button />
       </header>
 
       {/* content problems */}
       <div className='mt-10'>
         <span className='flex flex-col justify-center text-center gap-1'>
-          <h4 className='font-secondary text-main font-semibold text-sm'>The Problem</h4>
-          <h1 className='font-main text-black font-bold font-xl'>Why water quality index is important?</h1>
+          <h4 className='font-secondary text-main font-semibold text-sm md:text-base'>The Problem</h4>
+          <h1 className='font-main text-black font-bold font-xl md:text-2xl'>Why water quality index is important?</h1>
         </span>
-        <div className="grid grid-cols-1 gap-2 px-8 py-3">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:gap-y-8 gap-2 md:gap-4 px-8 py-3">
           {contentData.map((data, index) => (
             <div key={index} className="bg-slate-200 px-5 py-3 rounded-lg flex flex-col gap-1 justify-start">
             <div className='bg-black w-fit p-2 rounded-full'>{data.icon}</div>
-            <p className="text-black font-semibold font-main text-base">{data.title}</p>
-            <p className="text-black text-sm font-secondary">{data.desc}</p>
+            <p className="text-black font-semibold font-main text-base md:text-lg">{data.title}</p>
+            <p className="text-black text-sm font-secondary md:text-base">{data.desc}</p>
           </div>
           ))}
         </div>
       </div>
 
       {/* content quote */}
-      <div className="bg-black flex flex-col justify-center items-center gap-2 p-3 mt-14">
-        <img src={PictQuote} alt="People drinking" className='w-44' />
-        <span className='text-center text-white'>
-          <h3 className='font-main text-lg'>Monitoring Water Quality Index</h3>
-          <p className="font-secondary text-sm mt-2">
+      <div className="bg-black flex flex-col md:flex-row justify-center items-center gap-2 p-3 xl:px-20 xl:gap-10 md:p-10 mt-14">
+        <img src={PictQuote} alt="People drinking" className='w-44 md:w-64 lg:w-80 xl:w-96' />
+        <span className='flex flex-col items-center'>
+          <h3 className='text-center font-main text-lg md:text-2xl text-white'>Monitoring Water Quality Index</h3>
+          <p className="text-center font-secondary text-sm md:text-base mt-2 text-white">
             is a critical step in ensuring the sustainability of clean water resources and safeguarding public health. It helps identify water contamination and provides the basis for timely intervention to prevent the spread of waterborne diseases.
           </p>
+          <Button />
         </span>
-        <Button />
       </div>
 
       {/* content risk */}
       <div className='my-14'>
         <span className='flex flex-col justify-center text-center gap-1'>
-          <h4 className='font-secondary text-main font-semibold text-sm'>United Nation Environment Programme</h4>
-          <h1 className='font-main text-black font-bold text-lg'>New Health risk hot spot</h1>
+          <h4 className='font-secondary text-main font-semibold text-sm md:text-base'>United Nation Environment Programme</h4>
+          <h1 className='font-main text-black font-bold text-lg md:text-2xl'>New Health risk hot spot</h1>
         </span>
-        <div className="grid grid-cols-2 gap-2 mx-3 mt-3">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-2 mx-3 lg:mx-5 mt-3">
           {contentRisk.map((data, index) => (
             <div key={index} className='bg-white border rounded-lg px-3 py-2 text-black'>
-              <h3 className='font-main text-base font-semibold mb-1'>{data.title}</h3>
-              <p className='font-secondary text-sm text-left '>{data.desc}</p>
+              <h3 className='font-main text-base md:text-lg font-semibold mb-1'>{data.title}</h3>
+              <p className='font-secondary text-sm md:text-base text-left '>{data.desc}</p>
             </div>
           ))}
         </div>
