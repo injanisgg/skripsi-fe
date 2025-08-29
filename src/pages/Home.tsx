@@ -1,6 +1,7 @@
 import UnnesHeader from '../images/unnes-index.png';
 import PictQuote from '../images/pict-home.png';
 import Footer from '../components/Footer';
+import Button from '../components/Button';
 
 function Home() {
   
@@ -80,10 +81,7 @@ function Home() {
             </p>
           </div>
         </div>
-        <button className='flex gap-1 bg-white rounded-xl p-2 items-center mt-2'>
-          <i className="fa-solid fa-circle-chevron-right"></i>
-          <p className='text-sm font-secondary'>Start Classify</p>
-        </button>
+        <Button />
       </header>
 
       {/* content problems */}
@@ -112,10 +110,7 @@ function Home() {
             is a critical step in ensuring the sustainability of clean water resources and safeguarding public health. It helps identify water contamination and provides the basis for timely intervention to prevent the spread of waterborne diseases.
           </p>
         </span>
-        <button className='flex gap-1 bg-white rounded-xl p-2 items-center mt-2'>
-          <i className="fa-solid fa-circle-chevron-right"></i>
-          <p className='text-sm font-secondary'>Start Classify</p>
-        </button>
+        <Button />
       </div>
 
       {/* content risk */}

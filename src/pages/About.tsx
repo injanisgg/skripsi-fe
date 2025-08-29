@@ -1,11 +1,20 @@
 import HeadTitle from "../components/HeadTitle"
-import reactvite from '../images/reactvite.png'
+import reactvite from '../images/vite.png'
 import tailwind from '../images/tailwind.png'
-import icon from '../images/fontawesome.jpg'
+import icon from '../images/fontawesome.png'
 import vercel from '../images/vercel.png'
+import github from '../images/github.png'
 import Footer from "../components/Footer"
 
 function About() {
+  const toolsData = [
+    { img: reactvite, title: 'Vite + React' },
+    { img: tailwind, title: 'TailwindCSS' },
+    { img: icon, title: 'Fontawesome' },
+    { img: github, title: 'Github' },
+    { img: vercel, title: 'Vercel' }
+  ]
+
   return (
     <div>
       {/* header */}
@@ -37,26 +46,12 @@ function About() {
       {/* tools */}
       <h2 className="text-center font-main font-bold text-xl mt-10">Tools</h2>
       <div className="flex flex-wrap gap-3 justify-center mx-5 mt-3">
-        <span className="flex flex-col gap-1">
-          <img src={reactvite} alt="rvite" className="w-30 border rounded-lg py-2" />
-          <p className="font-main font-bold text-sm text-center">React + Vite</p>
-        </span>
-        <span className="flex flex-col gap-1">
-          <img src={tailwind} alt="rvite" className="w-28 border rounded-lg" />
-          <p className="font-main font-bold text-sm text-center">TailwindCSS</p>
-        </span>
-        <span className="flex flex-col gap-1">
-          <img src={icon} alt="rvite" className="w-30 border rounded-lg" />
-          <p className="font-main font-bold text-sm text-center">Fontawesome</p>
-        </span>
-        <span className="flex flex-col gap-1">
-          <div className="border rounded-lg w-fit p-2"><i className="fa-brands fa-github text-7xl py-4"></i></div>
-          <p className="font-main font-bold text-sm text-center">Github</p>
-        </span>
-        <span className="flex flex-col gap-1">
-          <img src={vercel} alt="rvite" className="w-32 border rounded-lg" />
-          <p className="font-main font-bold text-sm text-center">Vercel</p>
-        </span>
+        {toolsData.map((data, index) => (
+          <span key={index} className="flex flex-col items-center gap-1">
+            <img src={data.img} alt="rvite" className="w-24 border rounded-lg py-2" />
+            <p className="font-main font-semibold text-sm text-center">{data.title}</p>
+          </span>
+        ))}
       </div>
 
       {/* footer */}
