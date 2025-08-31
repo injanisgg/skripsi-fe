@@ -21,7 +21,7 @@ function About() {
       <HeadTitle title={'About the System'} desc={'This page provides information about the WQI classification system'}/>
 
       {/* about */}
-      <div className="flex flex-col gap-5 mx-5 xl:mx-8 mt-5">
+      <div className="flex flex-col gap-5 mx-5 lg:mx-10 mt-5">
         <h2 className="text-center font-main font-bold text-xl md:text-2xl">About</h2>
         <span>
           <h3 className="font-main font-semibold md:text-lg">01. The Developer</h3>

@@ -85,12 +85,12 @@ function Home() {
       </header>
 
       {/* content problems */}
-      <div className='mt-10'>
+      <div className='mt-10 lg:mx-10'>
         <span className='flex flex-col justify-center text-center gap-1'>
           <h4 className='font-secondary text-main font-semibold text-sm md:text-base'>The Problem</h4>
           <h1 className='font-main text-black font-bold font-xl md:text-2xl'>Why water quality index is important?</h1>
         </span>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:gap-y-8 gap-2 md:gap-4 px-8 py-3">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:gap-y-8 gap-2 md:gap-4 lg:gap-8 px-8 py-3">
           {contentData.map((data, index) => (
             <div key={index} className="bg-slate-200 px-5 py-3 rounded-lg flex flex-col gap-1 justify-start">
             <div className='bg-black w-fit p-2 rounded-full'>{data.icon}</div>
@@ -104,7 +104,7 @@ function Home() {
       {/* content quote */}
       <div className="bg-black flex flex-col md:flex-row justify-center items-center gap-2 p-3 xl:px-20 xl:gap-10 md:p-10 mt-14">
         <img src={PictQuote} alt="People drinking" className='w-44 md:w-64 lg:w-80 xl:w-96' />
-        <span className='flex flex-col items-center'>
+        <span className='flex flex-col items-center xl:px-8'>
           <h3 className='text-center font-main text-lg md:text-2xl text-white'>Monitoring Water Quality Index</h3>
           <p className="text-center font-secondary text-sm md:text-base mt-2 text-white">
             is a critical step in ensuring the sustainability of clean water resources and safeguarding public health. It helps identify water contamination and provides the basis for timely intervention to prevent the spread of waterborne diseases.
@@ -114,7 +114,7 @@ function Home() {
       </div>
 
       {/* content risk */}
-      <div className='my-14'>
+      <div className='my-14 lg:mx-10'>
         <span className='flex flex-col justify-center text-center gap-1'>
           <h4 className='font-secondary text-main font-semibold text-sm md:text-base'>United Nation Environment Programme</h4>
           <h1 className='font-main text-black font-bold text-lg md:text-2xl'>New Health risk hot spot</h1>

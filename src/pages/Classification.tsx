@@ -36,7 +36,7 @@ function Classification() {
       <HeadTitle title={'Classify'} desc={'This page is for classifying the water quality index'}/>
 
       {/* form */}
-      <div className="bg-gray-200 p-5 rounded-lg mx-3 md:mx-5 mt-8 flex flex-col gap-5">
+      <div className="bg-gray-200 p-5 rounded-lg mx-3 md:mx-5 lg:mx-10 mt-8 flex flex-col gap-5">
         <h2 className="text-center font-main font-bold text-xl md:text-2xl">Input the data</h2>
         <form action="">
           <ul className="flex flex-col md:grid md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-5">
